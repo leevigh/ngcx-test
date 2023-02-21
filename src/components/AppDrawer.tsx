@@ -1,5 +1,5 @@
 import React, { ReactNode } from 'react'
-import { NavLink } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 import { styled, useTheme, Theme, CSSObject } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import MuiDrawer from '@mui/material/Drawer';
@@ -177,8 +177,8 @@ const AppDrawer = ({ children }: {children: ReactNode}) => {
           {/* {['Dashboard', 'Users', 'Forms'].map((text, index) => ( */}
             <ListItem disablePadding sx={{ display: 'block' }}>
               <ListItemButton
-                component="a"
-                href='/'
+                component={Link}
+                to='/'
                 sx={{
                   minHeight: 48,
                   justifyContent: open ? 'initial' : 'center',
@@ -193,10 +193,11 @@ const AppDrawer = ({ children }: {children: ReactNode}) => {
                       justifyContent: 'center',
                     }}
                   >
-                    <HomeIcon />
+                      <HomeIcon />
                     {/* {index % 2 === 0 ? <HomeIcon /> : <MailIcon />} */}
                   </ListItemIcon>
                   <ListItemText primary={'Dashboard'} sx={{ opacity: open ? 1 : 0 }} />
+
                 {/* </NavLink> */}
               </ListItemButton>
             </ListItem>
@@ -228,8 +229,8 @@ const AppDrawer = ({ children }: {children: ReactNode}) => {
 
             <ListItem disablePadding sx={{ display: 'block' }}>
               <ListItemButton
-                component="a"
-                href='/forms'
+                component={Link}
+                to='/forms'
                 sx={{
                   minHeight: 48,
                   justifyContent: open ? 'initial' : 'center',

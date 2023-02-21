@@ -20,7 +20,7 @@ const Home = () => {
         <>
             <AppDrawer>
             </AppDrawer>
-            <main className="bg-[#F7F7F9] relative flex flex-col lg:flex-row h-screen">
+            <main className="bg-[#F7F7F9] relative flex flex-col lg:flex-row h-screen overflow-x-hidden">
                 {/* <SideNav /> */}
 
                 <div className='lg:flex flex-col lg:w-full h-screen'>
@@ -131,7 +131,7 @@ const Home = () => {
                                         </div>
                                     </div>
                                 </div>
-                                <div className='flex justify-evenly justify-self-end pt-5'>
+                                <div className='flex justify-evenly items-center pt-8'>
                                     <div className='flex flex-col'>
                                         <span className='text-sm text-[#4C4E64]/[.68]'>Performance</span>
                                         <span className='text-[#4C4E64]/[.87] font-semibold'>+99.99%</span>

@@ -5,9 +5,8 @@ import { AiOutlineSearch } from 'react-icons/ai'
 
 const Navigation = () => {
   return (
-    // <Container maxWidth='lg'>
         <div className=''>
-            <nav className='lg:w-full lg:px-4 lg:max-w-[1400px] mx-auto'>
+            <nav className='w-full lg:px-4 lg:max-w-[1400px] mx-auto'>
                 <div className='flex items-center justify-between'>
                     <div className='flex items-center'>
                         {/* <span className="text-[20px] lg:hidden drawer-button cursor-pointer text-black" >&#9776;</span> */}
@@ -23,7 +22,6 @@ const Navigation = () => {
                 </div>
             </nav>
         </div>
-    // </Container>
   )
 }
 

@@ -64,7 +64,7 @@ const TotalXXX = () => {
         <Chart 
             options={options} 
             series={series}
-            type="bar" width={'100%'} height={'100%'} />
+            type="bar" width={'100%'} height={270} />
     </div>
     // width={496} height={278}
   )
